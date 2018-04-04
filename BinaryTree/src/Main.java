@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import solution.LCASolution;
+import solution.PreOrderSolution;
 
 public class Main {
 
@@ -19,8 +20,10 @@ public class Main {
 //        System.out.println(new NextTreeNodeSolution().solution(line));
 
 
-        String[] inputs = line.split("!");
-        System.out.println(new LCASolution().solution(inputs[0], inputs[1], inputs[2]));
+//        String[] inputs = line.split("!");
+//        System.out.println(new LCASolution().solution(inputs[0], inputs[1], inputs[2]));
+
+        System.out.println(new PreOrderSolution().solution(line));
 
     }
 }

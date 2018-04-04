@@ -1,6 +1,7 @@
 package common;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 import node.TreeNode;
@@ -82,6 +83,20 @@ public class Utils {
             nodeQueue.add(node.right);
         }
         return "[" + output.substring(0, output.length() - 2) + "]";
+    }
+
+    public static String integerArrayListToString(List<Integer> nums) {
+        int length = nums.size();
+        if (length == 0) {
+            return "[]";
+        }
+
+        String result = "";
+        for (int index = 0; index < length; index++) {
+            Integer number = nums.get(index);
+            result += Integer.toString(number) + ", ";
+        }
+        return "[" + result.substring(0, result.length() - 2) + "]";
     }
 
 }
