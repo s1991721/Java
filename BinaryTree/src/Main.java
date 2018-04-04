@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 
 import solution.InOrderSolution;
 import solution.LCASolution;
+import solution.LevelOrderSolution;
 import solution.PostOrderSolution;
 import solution.PreOrderSolution;
 
@@ -28,6 +29,8 @@ public class Main {
 
 //        System.out.println(new InOrderSolution().solution(line));
 
-        System.out.println(new PostOrderSolution().solution(line));
+//        System.out.println(new PostOrderSolution().solution(line));
+
+        System.out.println(new LevelOrderSolution().solution(line));
     }
 }

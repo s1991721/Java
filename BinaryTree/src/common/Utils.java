@@ -99,4 +99,15 @@ public class Utils {
         return "[" + result.substring(0, result.length() - 2) + "]";
     }
 
+    public static String int2dListToString(List<List<Integer>> nums) {
+        StringBuilder sb = new StringBuilder("[");
+        for (List<Integer> list: nums) {
+            sb.append(integerArrayListToString(list));
+            sb.append(",");
+        }
+
+        sb.setCharAt(sb.length() - 1, ']');
+        return sb.toString();
+    }
+
 }
