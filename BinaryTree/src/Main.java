@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import solution.DepthSolution;
 import solution.InOrderSolution;
 import solution.LCASolution;
 import solution.LevelOrderSolution;
@@ -31,6 +32,8 @@ public class Main {
 
 //        System.out.println(new PostOrderSolution().solution(line));
 
-        System.out.println(new LevelOrderSolution().solution(line));
+//        System.out.println(new LevelOrderSolution().solution(line));
+
+        System.out.println(new DepthSolution().solution(line));
     }
 }
