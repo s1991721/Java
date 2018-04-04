@@ -8,6 +8,7 @@ import solution.LCASolution;
 import solution.LevelOrderSolution;
 import solution.PostOrderSolution;
 import solution.PreOrderSolution;
+import solution.SymmetricSolution;
 
 public class Main {
 
@@ -34,6 +35,8 @@ public class Main {
 
 //        System.out.println(new LevelOrderSolution().solution(line));
 
-        System.out.println(new DepthSolution().solution(line));
+//        System.out.println(new DepthSolution().solution(line));
+
+        System.out.println(new SymmetricSolution().solution(line));
     }
 }
