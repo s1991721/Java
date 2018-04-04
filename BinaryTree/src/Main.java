@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import solution.InOrderSolution;
 import solution.LCASolution;
 import solution.PreOrderSolution;
 
@@ -23,7 +24,9 @@ public class Main {
 //        String[] inputs = line.split("!");
 //        System.out.println(new LCASolution().solution(inputs[0], inputs[1], inputs[2]));
 
-        System.out.println(new PreOrderSolution().solution(line));
+//        System.out.println(new PreOrderSolution().solution(line));
 
+
+        System.out.println(new InOrderSolution().solution(line));
     }
 }
