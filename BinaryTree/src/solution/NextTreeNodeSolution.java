@@ -1,5 +1,9 @@
+package solution;
+
 import java.util.LinkedList;
 import java.util.Queue;
+
+import node.TreeLinkNode;
 
 /**
  * Created by mr.lin on 2018/4/3.
@@ -22,15 +26,6 @@ import java.util.Queue;
  * / \  / \
  * 4->5->6->7 -> NULL
  */
-
-class TreeLinkNode {
-    int val;
-    TreeLinkNode left, right, next;
-
-    TreeLinkNode(int x) {
-        val = x;
-    }
-}
 
 public class NextTreeNodeSolution {
 
@@ -57,7 +52,6 @@ public class NextTreeNodeSolution {
     }
 
     /**
-     *
      * @param input [1,2,3,4,5,6,7]
      * @return
      */
