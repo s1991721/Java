@@ -6,6 +6,7 @@ import solution.DepthSolution;
 import solution.InOrderSolution;
 import solution.LCASolution;
 import solution.LevelOrderSolution;
+import solution.PathSumSolution;
 import solution.PostOrderSolution;
 import solution.PreOrderSolution;
 import solution.SymmetricSolution;
@@ -37,6 +38,8 @@ public class Main {
 
 //        System.out.println(new DepthSolution().solution(line));
 
-        System.out.println(new SymmetricSolution().solution(line));
+//        System.out.println(new SymmetricSolution().solution(line));
+
+        System.out.println(new PathSumSolution().solution(line));
     }
 }
