@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 
 import solution.DepthSolution;
 import solution.FromIPorderSolution;
+import solution.FromPIorderSolution;
 import solution.InOrderSolution;
 import solution.LCASolution;
 import solution.LevelOrderSolution;
@@ -43,6 +44,8 @@ public class Main {
 
 //        System.out.println(new PathSumSolution().solution(line));
 
-        System.out.println(new FromIPorderSolution().solution(line));
+//        System.out.println(new FromIPorderSolution().solution(line));
+
+        System.out.println(new FromPIorderSolution().solution(line));
     }
 }
