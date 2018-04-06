@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import sort.BubbleSort;
+import sort.SelectionSort;
 import util.Utils;
 
 public class Main {
@@ -18,7 +19,9 @@ public class Main {
 
         int[] numbers = Utils.stringToInts(line);
 
-        System.out.println(new BubbleSort().sort(numbers));
+//        System.out.println(new BubbleSort().sort(numbers));
+
+        System.out.println(new SelectionSort().sort(numbers));
     }
 
 
