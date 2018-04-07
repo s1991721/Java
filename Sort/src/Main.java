@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import sort.BubbleSort;
+import sort.InsertionSort;
 import sort.SelectionSort;
 import util.Utils;
 
@@ -21,7 +22,9 @@ public class Main {
 
 //        System.out.println(new BubbleSort().sort(numbers));
 
-        System.out.println(new SelectionSort().sort(numbers));
+//        System.out.println(new SelectionSort().sort(numbers));
+
+        System.out.println(new InsertionSort().sort(numbers));
     }
 
 
