@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import sort.BubbleSort;
+import sort.HeapSort;
 import sort.InsertionSort;
 import sort.MergeSort;
 import sort.QuickSort;
@@ -33,7 +34,9 @@ public class Main {
 
 //        System.out.println(new MergeSort().sort(numbers));
 
-        System.out.println(new QuickSort().sort(numbers));
+//        System.out.println(new QuickSort().sort(numbers));
+
+        System.out.println(new HeapSort().sort(numbers));
     }
 
 
