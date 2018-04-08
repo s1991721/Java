@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import sort.BubbleSort;
 import sort.InsertionSort;
 import sort.MergeSort;
+import sort.QuickSort;
 import sort.SelectionSort;
 import sort.ShellSort;
 import util.Utils;
@@ -30,7 +31,9 @@ public class Main {
 
 //        System.out.println(new ShellSort().sort(numbers));
 
-        System.out.println(new MergeSort().sort(numbers));
+//        System.out.println(new MergeSort().sort(numbers));
+
+        System.out.println(new QuickSort().sort(numbers));
     }
 
 
