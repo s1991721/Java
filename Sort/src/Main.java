@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import sort.BucketSort;
+import sort.RadixSort;
 import util.Utils;
 
 public class Main {
@@ -34,7 +35,9 @@ public class Main {
 
 //        System.out.println(new CountingSort().sort(numbers));
 
-        System.out.println(new BucketSort().sort(numbers));
+//        System.out.println(new BucketSort().sort(numbers));
+
+        System.out.println(new RadixSort().sort(numbers));
     }
 
 
