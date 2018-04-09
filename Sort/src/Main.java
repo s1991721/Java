@@ -4,11 +4,15 @@ import java.io.InputStreamReader;
 
 import sort.BucketSort;
 import sort.RadixSort;
+import sort.StringSort;
 import util.Utils;
 
 public class Main {
 
     public static void main(String[] args) {
+
+        System.out.println(new StringSort().sort());
+
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         String line = null;
         try {
@@ -37,7 +41,7 @@ public class Main {
 
 //        System.out.println(new BucketSort().sort(numbers));
 
-        System.out.println(new RadixSort().sort(numbers));
+//        System.out.println(new RadixSort().sort(numbers));
     }
 
 
