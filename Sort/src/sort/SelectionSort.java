@@ -22,6 +22,16 @@ public class SelectionSort {
             Utils.swap(numbers,i,position);
         }
 
+//        蹩脚的选择排序
+//        for (int i = 0; i < numbers.length - 1; i++) {
+//            for (int j = i + 1; j < numbers.length; j++) {
+//                if (numbers[j] < numbers[i]) {
+//                    Utils.swap(numbers, i, j);//正规的是记录最小位置
+//                }
+//            }
+//            在内循环完成后再交换，这样可以减少交换次数
+//        }
+
         return Utils.intsToString(numbers) + "   cost:" + (System.currentTimeMillis() - stamp);
 
     }

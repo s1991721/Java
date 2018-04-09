@@ -12,15 +12,15 @@ public class BubbleSort {
 
         long stamp = System.currentTimeMillis();
 
-        for (int i = 0; i < numbers.length - 1; i++) {
-            for (int j = i + 1; j < numbers.length; j++) {
-                if (numbers[j] < numbers[i]) {
-                    Utils.swap(numbers, i, j);
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = 0; j < numbers.length - 1 - i; j++) {
+                if (numbers[j] > numbers[j + 1]) {
+                    Utils.swap(numbers, j, j + 1);
                 }
             }
         }
 
-        return Utils.intsToString(numbers) + "   cost:"+(System.currentTimeMillis() - stamp);
+        return Utils.intsToString(numbers) + "   cost:" + (System.currentTimeMillis() - stamp);
 
     }
 

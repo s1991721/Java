@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import sort.BubbleSort;
 import sort.BucketSort;
 import sort.RadixSort;
 import sort.StringSort;
@@ -11,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(new StringSort().sort());
+//        System.out.println(new StringSort().sort());
 
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         String line = null;
@@ -23,7 +24,7 @@ public class Main {
 
         int[] numbers = Utils.stringToInts(line);
 
-//        System.out.println(new BubbleSort().sort(numbers));
+        System.out.println(new BubbleSort().sort(numbers));
 
 //        System.out.println(new SelectionSort().sort(numbers));
 
