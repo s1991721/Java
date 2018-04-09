@@ -2,14 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import sort.BubbleSort;
-import sort.CountingSort;
-import sort.HeapSort;
-import sort.InsertionSort;
-import sort.MergeSort;
-import sort.QuickSort;
-import sort.SelectionSort;
-import sort.ShellSort;
+import sort.BucketSort;
 import util.Utils;
 
 public class Main {
@@ -39,7 +32,9 @@ public class Main {
 
 //        System.out.println(new HeapSort().sort(numbers));
 
-        System.out.println(new CountingSort().sort(numbers));
+//        System.out.println(new CountingSort().sort(numbers));
+
+        System.out.println(new BucketSort().sort(numbers));
     }
 
 
