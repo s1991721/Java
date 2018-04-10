@@ -8,28 +8,26 @@ import util.Utils;
  */
 public class ShellSort {
 
-    public String sort(int[] numbers) {
+    public String sort(int[] data) {
 
         long stamp = System.currentTimeMillis();
 
-        int gap = numbers.length / 2;
-
-        while (gap > 0) {
-
-            for (int i = gap; i < numbers.length; i++) {
-                int prePosition = i - gap;
-                while (prePosition > 0 && numbers[prePosition] > numbers[prePosition + gap]) {
-                    Utils.swap(numbers, prePosition, prePosition + gap);
-                    prePosition = prePosition - gap;
+        for (int increment = data.length / 2; increment > 0; increment /= 2) {
+            for (int i = increment; i < data.length; i++) {
+                int temp = data[i];
+                int j;
+                for (j = i - increment; j >= 0; j -= increment) {
+                    if (temp < data[j]) {
+                        data[j + increment] = data[j];
+                    } else {
+                        break;
+                    }
                 }
+                data[j + increment] = temp;
             }
-
-            gap = gap / 2;
-
         }
 
-
-        return Utils.intsToString(numbers) + "   cost:" + (System.currentTimeMillis() - stamp);
+        return Utils.intsToString(data) + "   cost:" + (System.currentTimeMillis() - stamp);
 
     }
 
