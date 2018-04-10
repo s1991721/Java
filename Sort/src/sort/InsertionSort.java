@@ -16,11 +16,11 @@ public class InsertionSort {
 
             int prePosition = i - 1;
             int current = numbers[i];
-            while (current < numbers[prePosition]) {
-                Utils.swap(numbers, prePosition + 1, prePosition);
+            while (prePosition >= 0 && current < numbers[prePosition]) {
+                numbers[prePosition + 1] = numbers[prePosition];
                 prePosition--;
             }
-
+            numbers[prePosition + 1] = current;
         }
 
         return Utils.intsToString(numbers) + "   cost:" + (System.currentTimeMillis() - stamp);
