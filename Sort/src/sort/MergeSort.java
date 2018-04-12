@@ -35,37 +35,28 @@ public class MergeSort {
     private int[] merge(int[] left, int[] right) {
         int[] result = new int[left.length + right.length];
 
-        int[] longInts = left.length > right.length ? left : right;
-        int[] shortInts = left.length > right.length ? right : left;
-        int shortP = 0;
-        int longP = 0;
+        int leftP = 0;
+        int rightP = 0;
         int resultP = 0;
 
-
-        while (shortP < shortInts.length && longP < longInts.length) {
-            if (shortInts[shortP] > longInts[longP]) {
-                result[resultP++] = longInts[longP];
-                longP++;
-            } else if (shortInts[shortP] < longInts[longP]) {
-                result[resultP++] = shortInts[shortP];
-                shortP++;
+        while (leftP < left.length && rightP < right.length) {
+            if (left[leftP] > right[rightP]) {
+                result[resultP++] = right[rightP++];
+            } else if (left[leftP] < right[rightP]) {
+                result[resultP++] = left[leftP++];
             } else {
-                result[resultP++] = shortInts[shortP];
-                shortP++;
-                result[resultP++] = longInts[longP];
-                longP++;
+                result[resultP++] = left[leftP++];
+                result[resultP++] = right[rightP++];
             }
         }
 
 
-        while (shortP < shortInts.length) {
-            result[resultP++] = shortInts[shortP];
-            shortP++;
+        while (leftP < left.length) {
+            result[resultP++] = left[leftP++];
         }
 
-        while (longP < longInts.length) {
-            result[resultP++] = longInts[longP];
-            longP++;
+        while (rightP < right.length) {
+            result[resultP++] = right[rightP++];
         }
 
         return result;
