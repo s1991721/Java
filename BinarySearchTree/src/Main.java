@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import solution.IteratorSolution;
 import solution.ValidBSTSolution;
 
 public class Main {
@@ -16,6 +17,8 @@ public class Main {
             e.printStackTrace();
         }
 
-        System.out.println(new ValidBSTSolution().solution(line));
+//        System.out.println(new ValidBSTSolution().solution(line));
+
+        System.out.println(new IteratorSolution().solution(line));
     }
 }
