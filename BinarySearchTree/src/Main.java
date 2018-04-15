@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import solution.IteratorSolution;
+import solution.SearchSolution;
 import solution.ValidBSTSolution;
 
 public class Main {
@@ -19,6 +20,8 @@ public class Main {
 
 //        System.out.println(new ValidBSTSolution().solution(line));
 
-        System.out.println(new IteratorSolution().solution(line));
+//        System.out.println(new IteratorSolution().solution(line));
+
+        System.out.println(new SearchSolution().solution(line));
     }
 }
