@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import solution.ContainsDuplicate3Solution;
+import solution.IsBalanceSolution;
 
 public class Main {
 
@@ -28,6 +28,8 @@ public class Main {
 
 //        System.out.println(new KThSolution().solution(line));
 
-        System.out.println(new ContainsDuplicate3Solution().solution(line));
+//        System.out.println(new ContainsDuplicate3Solution().solution(line));
+
+        System.out.println(new IsBalanceSolution().solution(line));
     }
 }
