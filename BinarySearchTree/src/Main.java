@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import solution.DeleteSolution;
 import solution.InsertSolution;
 import solution.IteratorSolution;
+import solution.KThSolution;
 import solution.SearchSolution;
 import solution.ValidBSTSolution;
 
@@ -28,6 +29,8 @@ public class Main {
 
 //        System.out.println(new InsertSolution().solution(line));
 
-        System.out.println(new DeleteSolution().solution(line));
+//        System.out.println(new DeleteSolution().solution(line));
+
+        System.out.println(new KThSolution().solution(line));
     }
 }
