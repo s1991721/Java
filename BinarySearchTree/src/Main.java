@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import solution.IsBalanceSolution;
+import solution.ToBSTSolution;
 
 public class Main {
 
@@ -30,6 +31,8 @@ public class Main {
 
 //        System.out.println(new ContainsDuplicate3Solution().solution(line));
 
-        System.out.println(new IsBalanceSolution().solution(line));
+//        System.out.println(new IsBalanceSolution().solution(line));
+
+        System.out.println(new ToBSTSolution().solution(line));
     }
 }
