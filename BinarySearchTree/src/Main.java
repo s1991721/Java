@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import solution.DeleteSolution;
 import solution.InsertSolution;
 import solution.IteratorSolution;
 import solution.SearchSolution;
@@ -25,6 +26,8 @@ public class Main {
 
 //        System.out.println(new SearchSolution().solution(line));
 
-        System.out.println(new InsertSolution().solution(line));
+//        System.out.println(new InsertSolution().solution(line));
+
+        System.out.println(new DeleteSolution().solution(line));
     }
 }
