@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import solution.LevelorderSolution;
 import solution.PostorderSolution;
 import solution.PreorderSolution;
 
@@ -19,7 +20,9 @@ public class Main {
 
 //        System.out.println(new PreorderSolution().solution(line));
 
-        System.out.println(new PostorderSolution().solution(line));
+//        System.out.println(new PostorderSolution().solution(line));
+
+        System.out.println(new LevelorderSolution().solution(line));
 
     }
 }

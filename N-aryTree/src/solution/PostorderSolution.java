@@ -8,6 +8,10 @@ import model.Node;
 
 /**
  * Created by mr.lin on 2018/4/17.
+ *
+ * N-ary Tree Postorder Traversal
+ *
+ * https://leetcode.com/explore/learn/card/n-ary-tree/130/traversal/926/
  */
 public class PostorderSolution {
 
