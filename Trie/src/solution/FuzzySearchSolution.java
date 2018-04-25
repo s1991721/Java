@@ -9,7 +9,7 @@ import model.TrieNode;
  * <p>
  * https://leetcode.com/explore/learn/card/trie/148/practical-application-i/1052/
  */
-public class SearchSolution {
+public class FuzzySearchSolution {
 
     public String solution(String input) {
         String[] strings = input.split("!");
