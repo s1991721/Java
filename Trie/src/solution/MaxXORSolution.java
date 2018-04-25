@@ -1,6 +1,5 @@
 package solution;
 
-import java.util.HashMap;
 import java.util.List;
 
 import Util.Utils;
@@ -16,31 +15,50 @@ public class MaxXORSolution {
 
     public String solution(String input) {
 
-        List<Integer> ints = Utils.stringToIntList(input);
+        List<Integer> nums = Utils.stringToIntList(input);
 
 
-        return String.valueOf(maxSubarrayXOR(ints, ints.size()));
+        return String.valueOf(findMaximumXOR(nums));
     }
 
+    private int findMaximumXOR(List<Integer> nums) {
 
-    private int maxSubarrayXOR(List<Integer> arr, int n) {
-        int ans = Integer.MIN_VALUE; // Initialize result
+        TrieNode root = new TrieNode();
+        buildTrie(nums, root);
 
-        // Pick starting points of subarrays
-        for (int i = 0; i < n; i++) {
-            // to store xor of current subarray
-            int curr_xor = arr.get(i);
+        int max = 0;
 
-            // Pick ending points of subarrays starting with i
-            for (int j = i; j < n; j++) {
-                ans = Math.max(ans,  curr_xor ^ arr.get(j));
+        for (int num : nums) {
+            int res = 0;
+            TrieNode node = root;
+            for (int i = 31; i >= 0; i--) {
+                int bit = (num >> i) & 1;
+                if (node.children[bit ^ 1] != null) {
+                    res += 1 << i;
+                    node = node.children[bit ^1];
+                } else {
+                    node = node.children[bit];
+                }
+            }
+            max = Math.max(res, max);
+        }
+        return max;
+    }
+
+    private void buildTrie(List<Integer> nums, TrieNode root) {
+        for (int num : nums) {
+            TrieNode node = root;
+            for (int i = 31; i >= 0; i--) {
+                int bit = (num >> i) & 1;
+                if (node.children[bit] == null) {
+                    node.children[bit] = new TrieNode();
+                }
+                node = node.children[bit];
             }
         }
-        return ans;
     }
 
     class TrieNode {
-        boolean isFinish;
-        HashMap<Integer, TrieNode> nexts = new HashMap<Integer, TrieNode>();
+        TrieNode[] children = new TrieNode[2];
     }
 }
