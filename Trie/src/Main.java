@@ -2,9 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import solution.MaxXORSolution;
-import solution.ReplaceSolution;
-import solution.TrieSolution;
+import solution.MapSumSolution;
 
 public class Main {
 
@@ -21,6 +19,8 @@ public class Main {
 
 //        System.out.println(new MaxXORSolution().solution(line));
 
-        System.out.println(new TrieSolution().solution(line));
+//        System.out.println(new TrieSolution().solution(line));
+
+        System.out.println(new MapSumSolution().solution(line));
     }
 }
