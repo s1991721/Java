@@ -20,4 +20,15 @@ public class Utils {
         return list;
     }
 
+    public static List<String> stringToStringList(String input) {
+        String trie = input.substring(1, input.length() - 1);
+        List<String> dict = Arrays.asList(trie.split(","));
+        List<String> list = new ArrayList<String>();
+        for (String string : dict) {
+            list.add(string.trim());
+        }
+
+        return list;
+    }
+
 }

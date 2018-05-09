@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import solution.MatrixSearchSolution;
 import solution.MaxXORSolution;
 
 public class Main {
@@ -17,12 +18,14 @@ public class Main {
 
 //        System.out.println(new ReplaceSolution().solution(line));
 //
-        System.out.println(new MaxXORSolution().solution(line));
+//        System.out.println(new MaxXORSolution().solution(line));
 //
 //        System.out.println(new TrieSolution().solution(line));
 //
 //        System.out.println(new MapSumSolution().solution(line));
 
 //        System.out.println(new FuzzySearchSolution().solution(line));
+
+        System.out.println(new MatrixSearchSolution().solution(line));
     }
 }
