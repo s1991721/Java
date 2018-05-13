@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import solution.HappyNumberSolution;
+import solution.SingleNumberSolution;
 
 public class Main {
 
@@ -16,7 +17,8 @@ public class Main {
             e.printStackTrace();
         }
 
+//        System.out.println(new HappyNumberSolution().solution(line));
 
-        System.out.println(new HappyNumberSolution().solution(line));
+        System.out.println(new SingleNumberSolution().solution(line));
     }
 }
