@@ -2,8 +2,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import solution.FuzzySearchSolution;
+import solution.MapSumSolution;
 import solution.MatrixSearchSolution;
 import solution.MaxXORSolution;
+import solution.PalindromeSolution;
+import solution.ReplaceSolution;
+import solution.TrieSolution;
 
 public class Main {
 
@@ -23,9 +28,11 @@ public class Main {
 //        System.out.println(new TrieSolution().solution(line));
 //
 //        System.out.println(new MapSumSolution().solution(line));
-
+//
 //        System.out.println(new FuzzySearchSolution().solution(line));
+//
+//        System.out.println(new MatrixSearchSolution().solution(line));
 
-        System.out.println(new MatrixSearchSolution().solution(line));
+        System.out.println(new PalindromeSolution().solution(line));
     }
 }
