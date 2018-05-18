@@ -7,6 +7,7 @@ import solution.IsomorphicStringSolution;
 import solution.MinimumIndexSumSolution;
 import solution.SingleNumberSolution;
 import solution.TwoSumSolution;
+import solution.UniqueCharacterSolution;
 
 public class Main {
 
@@ -28,6 +29,8 @@ public class Main {
 
 //        System.out.println(new IsomorphicStringSolution().solution(line));
 
-        System.out.println(new MinimumIndexSumSolution().solution(line));
+//        System.out.println(new MinimumIndexSumSolution().solution(line));
+
+        System.out.println(new UniqueCharacterSolution().solution(line));
     }
 }
