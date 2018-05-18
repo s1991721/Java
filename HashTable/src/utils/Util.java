@@ -31,11 +31,15 @@ public class Util {
         }
 
         String result = "";
-        for(int index = 0; index < length; index++) {
+        for (int index = 0; index < length; index++) {
             int number = nums[index];
             result += Integer.toString(number) + ", ";
         }
         return "[" + result.substring(0, result.length() - 2) + "]";
+    }
+
+    public static String[] stringToStrings(String input) {
+        return input.split(",");
     }
 
 }
