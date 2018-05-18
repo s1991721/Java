@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 
 import solution.HappyNumberSolution;
 import solution.SingleNumberSolution;
+import solution.TwoSumSolution;
 
 public class Main {
 
@@ -19,6 +20,8 @@ public class Main {
 
 //        System.out.println(new HappyNumberSolution().solution(line));
 
-        System.out.println(new SingleNumberSolution().solution(line));
+//        System.out.println(new SingleNumberSolution().solution(line));
+
+        System.out.println(new TwoSumSolution().solution(line));
     }
 }
