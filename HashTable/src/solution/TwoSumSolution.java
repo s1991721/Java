@@ -6,6 +6,10 @@ import utils.Util;
 
 /**
  * Created by mr.lin on 2018/5/18.
+ * <p>
+ * Two Sum
+ * <p>
+ * https://leetcode.com/explore/learn/card/hash-table/184/comparison-with-other-data-structures/1115/
  */
 public class TwoSumSolution {
 

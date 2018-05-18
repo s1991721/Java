@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import solution.HappyNumberSolution;
+import solution.IsomorphicStringSolution;
 import solution.SingleNumberSolution;
 import solution.TwoSumSolution;
 
@@ -22,6 +23,8 @@ public class Main {
 
 //        System.out.println(new SingleNumberSolution().solution(line));
 
-        System.out.println(new TwoSumSolution().solution(line));
+//        System.out.println(new TwoSumSolution().solution(line));
+
+        System.out.println(new IsomorphicStringSolution().solution(line));
     }
 }
