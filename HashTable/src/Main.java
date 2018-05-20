@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import solution.AnagramsSolution;
 import solution.DuplicateSolution;
 import solution.HappyNumberSolution;
 import solution.IntersectionSolution;
@@ -37,6 +38,8 @@ public class Main {
 
 //        System.out.println(new IntersectionSolution().solution(line));
 
-        System.out.println(new DuplicateSolution().solution(line));
+//        System.out.println(new DuplicateSolution().solution(line));
+
+        System.out.println(new AnagramsSolution().solution(line));
     }
 }
