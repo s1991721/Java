@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import solution.HappyNumberSolution;
+import solution.IntersectionSolution;
 import solution.IsomorphicStringSolution;
 import solution.MinimumIndexSumSolution;
 import solution.SingleNumberSolution;
@@ -31,6 +32,8 @@ public class Main {
 
 //        System.out.println(new MinimumIndexSumSolution().solution(line));
 
-        System.out.println(new UniqueCharacterSolution().solution(line));
+//        System.out.println(new UniqueCharacterSolution().solution(line));
+
+        System.out.println(new IntersectionSolution().solution(line));
     }
 }
