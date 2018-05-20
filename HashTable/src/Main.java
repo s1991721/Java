@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import solution.DuplicateSolution;
 import solution.HappyNumberSolution;
 import solution.IntersectionSolution;
 import solution.IsomorphicStringSolution;
@@ -34,6 +35,8 @@ public class Main {
 
 //        System.out.println(new UniqueCharacterSolution().solution(line));
 
-        System.out.println(new IntersectionSolution().solution(line));
+//        System.out.println(new IntersectionSolution().solution(line));
+
+        System.out.println(new DuplicateSolution().solution(line));
     }
 }
