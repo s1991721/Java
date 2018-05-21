@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 
 import solution.AnagramsSolution;
 import solution.DuplicateSolution;
+import solution.DuplicateSubtrees;
 import solution.HappyNumberSolution;
 import solution.IntersectionSolution;
 import solution.IsomorphicStringSolution;
@@ -43,6 +44,8 @@ public class Main {
 
 //        System.out.println(new AnagramsSolution().solution(line));
 
-        System.out.println(new SudokuSolution().solution(line));
+//        System.out.println(new SudokuSolution().solution(line));
+
+        System.out.println(new DuplicateSubtrees().solution(line));
     }
 }
