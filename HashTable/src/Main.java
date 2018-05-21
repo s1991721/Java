@@ -9,6 +9,7 @@ import solution.IntersectionSolution;
 import solution.IsomorphicStringSolution;
 import solution.MinimumIndexSumSolution;
 import solution.SingleNumberSolution;
+import solution.SudokuSolution;
 import solution.TwoSumSolution;
 import solution.UniqueCharacterSolution;
 
@@ -40,6 +41,8 @@ public class Main {
 
 //        System.out.println(new DuplicateSolution().solution(line));
 
-        System.out.println(new AnagramsSolution().solution(line));
+//        System.out.println(new AnagramsSolution().solution(line));
+
+        System.out.println(new SudokuSolution().solution(line));
     }
 }

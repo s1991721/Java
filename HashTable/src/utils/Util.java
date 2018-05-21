@@ -42,4 +42,26 @@ public class Util {
         return input.split(",");
     }
 
+    public static char[][] stringToCharChar(String input) {
+        String[] rows = input.substring(1, input.length() - 1).split("!");
+
+        char[][] res=new char[rows.length][];
+        for (int i = 0; i < rows.length; i++) {
+            res[i]=stringToChar(rows[i]);
+        }
+
+
+        return res;
+
+    }
+
+    public static char[] stringToChar(String input) {
+        String[] rows = input.substring(1, input.length() - 1).split(",");
+        char[] res = new char[rows.length];
+        for (int i = 0; i < rows.length; i++) {
+            res[i] = rows[i].toCharArray()[0];
+        }
+        return res;
+    }
+
 }
