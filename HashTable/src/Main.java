@@ -8,6 +8,7 @@ import solution.DuplicateSubtrees;
 import solution.HappyNumberSolution;
 import solution.IntersectionSolution;
 import solution.IsomorphicStringSolution;
+import solution.JewelsandStonesSolution;
 import solution.MinimumIndexSumSolution;
 import solution.SingleNumberSolution;
 import solution.SudokuSolution;
@@ -46,6 +47,8 @@ public class Main {
 
 //        System.out.println(new SudokuSolution().solution(line));
 
-        System.out.println(new DuplicateSubtrees().solution(line));
+//        System.out.println(new DuplicateSubtrees().solution(line));
+
+        System.out.println(new JewelsandStonesSolution().solution(line));
     }
 }
