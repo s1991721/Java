@@ -11,6 +11,7 @@ import solution.IsomorphicStringSolution;
 import solution.JewelsandStonesSolution;
 import solution.MinimumIndexSumSolution;
 import solution.SingleNumberSolution;
+import solution.SubstringWithoutRepeatingSolution;
 import solution.SudokuSolution;
 import solution.TwoSumSolution;
 import solution.UniqueCharacterSolution;
@@ -49,6 +50,8 @@ public class Main {
 
 //        System.out.println(new DuplicateSubtrees().solution(line));
 
-        System.out.println(new JewelsandStonesSolution().solution(line));
+//        System.out.println(new JewelsandStonesSolution().solution(line));
+
+        System.out.println(new SubstringWithoutRepeatingSolution().solution(line));
     }
 }
