@@ -14,6 +14,7 @@ import solution.MinimumIndexSumSolution;
 import solution.SingleNumberSolution;
 import solution.SubstringWithoutRepeatingSolution;
 import solution.SudokuSolution;
+import solution.TopFrequentSolution;
 import solution.TwoSumSolution;
 import solution.UniqueCharacterSolution;
 
@@ -55,6 +56,8 @@ public class Main {
 
 //        System.out.println(new SubstringWithoutRepeatingSolution().solution(line));
 
-        System.out.println(new FourSumSolution().solution(line));
+//        System.out.println(new FourSumSolution().solution(line));
+
+        System.out.println(new TopFrequentSolution().solution(line));
     }
 }
