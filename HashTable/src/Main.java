@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import solution.AnagramsSolution;
 import solution.DuplicateSolution;
 import solution.DuplicateSubtrees;
+import solution.FourSumSolution;
 import solution.HappyNumberSolution;
 import solution.IntersectionSolution;
 import solution.IsomorphicStringSolution;
@@ -52,6 +53,8 @@ public class Main {
 
 //        System.out.println(new JewelsandStonesSolution().solution(line));
 
-        System.out.println(new SubstringWithoutRepeatingSolution().solution(line));
+//        System.out.println(new SubstringWithoutRepeatingSolution().solution(line));
+
+        System.out.println(new FourSumSolution().solution(line));
     }
 }
