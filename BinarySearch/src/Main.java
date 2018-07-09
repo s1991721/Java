@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import solution.BinarySearchSolution;
+import solution.SqrtSolution;
 
 public class Main {
 
@@ -16,6 +17,8 @@ public class Main {
             e.printStackTrace();
         }
 
-        System.out.println(new BinarySearchSolution().solution(line));
+//        System.out.println(new BinarySearchSolution().solution(line));
+
+        System.out.println(new SqrtSolution().solution(line));
     }
 }
