@@ -4,6 +4,10 @@ import utils.Util;
 
 /**
  * Created by mr.lin on 2018/7/9.
+ * <p>
+ * https://leetcode.com/explore/learn/card/binary-search/138/background/1038/
+ * <p>
+ * Binary Search
  */
 public class BinarySearchSolution {
 
@@ -20,7 +24,7 @@ public class BinarySearchSolution {
 
     private int search(int[] nums, int start, int end, int target) {
 
-        int mid = (start + end) / 2;
+        int mid = start + (end - start) / 2;//预防越界 start+end
         if (start >= end && target != nums[mid]) {//中断条件的重要性
             return -1;
         }

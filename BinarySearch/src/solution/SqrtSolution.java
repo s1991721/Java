@@ -2,6 +2,10 @@ package solution;
 
 /**
  * Created by mr.lin on 2018/7/9.
+ * <p>
+ * https://leetcode.com/explore/learn/card/binary-search/125/template-i/950/
+ * <p>
+ * Sqrt(x)
  */
 public class SqrtSolution {
 
@@ -18,7 +22,7 @@ public class SqrtSolution {
 
         int mid = 0;
         while (left < right) {
-            mid = (left + right) / 2;
+            mid =left+ (right - left) / 2;//预防越界 （start+end）／2
             if (target / mid == mid) {//mid * mid超范围
                 return mid + "";
             } else if (target / mid > mid) {
