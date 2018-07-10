@@ -2,6 +2,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import solution.RotatedSortedArraySolution;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -18,6 +20,6 @@ public class Main {
 
 //        System.out.println(new SqrtSolution().solution(line));
 
-        System.out.println(new GuessGameSolution().solution(line));
+        System.out.println(new RotatedSortedArraySolution().solution(line));
     }
 }
