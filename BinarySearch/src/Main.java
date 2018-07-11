@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import solution.PeakElementSolution;
 import solution.RotatedSortedArraySolution;
 
 public class Main {
@@ -20,6 +21,8 @@ public class Main {
 
 //        System.out.println(new SqrtSolution().solution(line));
 
-        System.out.println(new RotatedSortedArraySolution().solution(line));
+//        System.out.println(new RotatedSortedArraySolution().solution(line));
+
+        System.out.println(new PeakElementSolution().solution(line));
     }
 }
