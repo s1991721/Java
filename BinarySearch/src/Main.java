@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import solution.BinarySearchSolution;
 import solution.ClosestElementsSolution;
 import solution.PeakElementSolution;
+import solution.PowSolution;
 import solution.RotatedSortedArraySolution;
 import solution.SearchRangeSolution;
 import solution.SqrtSolution;
@@ -31,6 +32,8 @@ public class Main {
 
 //        System.out.println(new SearchRangeSolution().solution(line));
 
-        System.out.println(new ClosestElementsSolution().solution(line));
+//        System.out.println(new ClosestElementsSolution().solution(line));
+
+        System.out.println(new PowSolution().solution(line));
     }
 }
