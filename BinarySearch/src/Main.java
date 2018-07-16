@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 
 import solution.BinarySearchSolution;
 import solution.ClosestElementsSolution;
+import solution.MinimumRotatedSolution;
 import solution.NextGreatestLetterSolution;
 import solution.PeakElementSolution;
 import solution.PerfectSquareSolution;
@@ -40,6 +41,8 @@ public class Main {
 
 //        System.out.println(new PerfectSquareSolution().solution(line));
 
-        System.out.println(new NextGreatestLetterSolution().solution(line));
+//        System.out.println(new NextGreatestLetterSolution().solution(line));
+
+        System.out.println(new MinimumRotatedSolution().solution(line));
     }
 }
