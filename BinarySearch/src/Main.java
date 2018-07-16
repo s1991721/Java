@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 
 import solution.BinarySearchSolution;
 import solution.ClosestElementsSolution;
+import solution.NextGreatestLetterSolution;
 import solution.PeakElementSolution;
 import solution.PerfectSquareSolution;
 import solution.PowSolution;
@@ -24,11 +25,11 @@ public class Main {
         }
 
 //        System.out.println(new BinarySearchSolution().solution(line));
-//
+
 //        System.out.println(new SqrtSolution().solution(line));
-//
+
 //        System.out.println(new RotatedSortedArraySolution().solution(line));
-//
+
 //        System.out.println(new PeakElementSolution().solution(line));
 
 //        System.out.println(new SearchRangeSolution().solution(line));
@@ -37,6 +38,8 @@ public class Main {
 
 //        System.out.println(new PowSolution().solution(line));
 
-        System.out.println(new PerfectSquareSolution().solution(line));
+//        System.out.println(new PerfectSquareSolution().solution(line));
+
+        System.out.println(new NextGreatestLetterSolution().solution(line));
     }
 }
