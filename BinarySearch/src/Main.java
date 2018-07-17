@@ -12,6 +12,7 @@ import solution.PowSolution;
 import solution.RotatedSortedArraySolution;
 import solution.SearchRangeSolution;
 import solution.SqrtSolution;
+import solution.TwoSumSolution;
 
 public class Main {
 
@@ -43,6 +44,8 @@ public class Main {
 
 //        System.out.println(new NextGreatestLetterSolution().solution(line));
 
-        System.out.println(new MinimumRotatedSolution().solution(line));
+//        System.out.println(new MinimumRotatedSolution().solution(line));
+
+        System.out.println(new TwoSumSolution().solution(line));
     }
 }
