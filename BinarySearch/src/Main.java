@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import solution.BinarySearchSolution;
 import solution.ClosestElementsSolution;
 import solution.DuplicateNumberSolution;
+import solution.KthSmallestPairDistance;
 import solution.MedianSolution;
 import solution.MinimumRotatedSolution;
 import solution.NextGreatestLetterSolution;
@@ -50,6 +51,8 @@ public class Main {
 
 //        System.out.println(new TwoSumSolution().solution(line));
 
-        System.out.println(new MedianSolution().solution(line));
+//        System.out.println(new MedianSolution().solution(line));
+
+        System.out.println(new KthSmallestPairDistance().solution(line));
     }
 }
