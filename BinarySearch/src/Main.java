@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import solution.BinarySearchSolution;
 import solution.ClosestElementsSolution;
 import solution.DuplicateNumberSolution;
+import solution.MedianSolution;
 import solution.MinimumRotatedSolution;
 import solution.NextGreatestLetterSolution;
 import solution.PeakElementSolution;
@@ -49,6 +50,6 @@ public class Main {
 
 //        System.out.println(new TwoSumSolution().solution(line));
 
-        System.out.println(new DuplicateNumberSolution().solution(line));
+        System.out.println(new MedianSolution().solution(line));
     }
 }
