@@ -32,7 +32,7 @@ public class Main {
 
 //        System.out.println(new BinarySearchSolution().solution(line));
 
-//        System.out.println(new SqrtSolution().solution(line));
+        System.out.println(new SqrtSolution().solution(line));
 
 //        System.out.println(new RotatedSortedArraySolution().solution(line));
 
@@ -56,6 +56,6 @@ public class Main {
 
 //        System.out.println(new KthSmallestPairDistance().solution(line));
 
-        System.out.println(new SplitArraySolution().solution(line));
+//        System.out.println(new SplitArraySolution().solution(line));
     }
 }

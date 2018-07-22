@@ -11,34 +11,34 @@ public class SqrtSolution {
 
     public String solution(String input) {
 
-        int target = Integer.valueOf(input);
+        int x = Integer.valueOf(input);
 
-        if (target == 0) {
-            return "0";
-        }
+        return String.valueOf(mySqrt(x));
 
-        int left = 0;
-        int right = Integer.MAX_VALUE;
+    }
 
-        int mid = 0;
-        while (left < right) {
-            mid =left+ (right - left) / 2;//预防越界 （start+end）／2
-            if (target / mid == mid) {//mid * mid超范围
-                return mid + "";
-            } else if (target / mid > mid) {
-                if (left == mid) {
-                    return mid + "";
-                }
-                left = mid;
+    private int mySqrt(int x) {
+        int left = 1;
+        int right = x;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (mid == x / mid) {
+                return mid;
+            }
+
+            if (mid < x / mid) {
+                left = mid + 1;
             } else {
-                if (right == mid) {
-                    return mid + "";
-                }
-                right = mid;
+                right = mid - 1;
             }
         }
 
-        return mid + "";
+        if (left > x / left) {
+            return left - 1;
+        } else {
+            return left;
+        }
     }
 
 }
