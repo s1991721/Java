@@ -28,10 +28,10 @@ public class RotatedSortedArraySolution {
         int right = nums.length - 1;
 
         while (left <= right) {
-            int mid = left + (right - left) / 2;
-            int realmid = (mid + pivot) % len;//偏移
-            if (target == nums[realmid]) return realmid;
-            if (target > nums[realmid]) {
+            int mid = left + (right - left) / 2;//排序数组的中间位置
+            int realPosition = (mid + pivot) % len;//偏移后中间位置，在未排序数组中的实际位置
+            if (target == nums[realPosition]) return realPosition;
+            if (target > nums[realPosition]) {
                 left = mid + 1;
             } else {
                 right = mid - 1;
@@ -43,6 +43,7 @@ public class RotatedSortedArraySolution {
 
     }
 
+    //左侧未排序的数组各项都大于右侧未排序数组项
     private int getPivot(int[] nums) {
 
         int left = 0;
@@ -50,9 +51,9 @@ public class RotatedSortedArraySolution {
 
         while (left < right) {
             int mid = left + (right - left) / 2;
-            if (nums[mid] < nums[right]) {
+            if (nums[mid] < nums[right]) {//mid在右侧数组
                 right = mid;
-            } else {
+            } else {//mid在左侧数组
                 left = mid + 1;
             }
 

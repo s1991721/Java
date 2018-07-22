@@ -23,9 +23,9 @@ public class PeakElementSolution {
             if (left == right)
                 return left;
             int mid = (left + right) / 2;
-            if (nums[mid] < nums[mid + 1])//自己小于右的话，peak在不包括自己的右边
+            if (nums[mid] < nums[mid + 1])//自己小于右的话，peak在右边,左脚迈进
                 left = mid + 1;
-            else//自己大于右边，结果在包括自己的左边
+            else//自己大于右边，peak可能是自己也可能在左边，右脚踩点
                 right = mid;
 
         }

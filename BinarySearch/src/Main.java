@@ -32,11 +32,11 @@ public class Main {
 
 //        System.out.println(new BinarySearchSolution().solution(line));
 
-        System.out.println(new SqrtSolution().solution(line));
+//        System.out.println(new SqrtSolution().solution(line));
 
 //        System.out.println(new RotatedSortedArraySolution().solution(line));
 
-//        System.out.println(new PeakElementSolution().solution(line));
+        System.out.println(new PeakElementSolution().solution(line));
 
 //        System.out.println(new SearchRangeSolution().solution(line));
 
