@@ -29,13 +29,13 @@ public class SearchRangeSolution {
         int start = 0, end = nums.length - 1;
         int mid;
 
-        while (start + 1 < end) {//左边的起始点，两个分界
+        while (start + 1 < end) {//Template III求目标项，
             mid = start + (end - start) / 2;
-            if (nums[mid] < target) start = mid;
-            else end = mid;
+            if (nums[mid] < target) start = mid;//start位置项不等于target
+            else end = mid;//end位置项等于target
         }
 
-        //由于用两个点分界所以不知道哪个点是target
+        //得到的start和end必定是(,]左开右闭区间，是最终结果范围的左边
         if (nums[start] == target) res[0] = start;
         else if (nums[end] == target) res[0] = end;
         else return res;
@@ -44,13 +44,13 @@ public class SearchRangeSolution {
         start = 0;
         end = nums.length - 1;
 
-        while (start + 1 < end) {//左右边的起始点，两个分界
+        while (start + 1 < end) {
             mid = start + (end - start) / 2;
-            if (nums[mid] > target) end = mid;
-            else start = mid;
+            if (nums[mid] > target) end = mid;//end位置项不等于target
+            else start = mid;//start位置项等于target
         }
 
-
+        //得到的start和end必定是[,)左闭右开区间，是最终结果范围的右边
         if (nums[end] == target) res[1] = end;
         else if (nums[start] == target) res[1] = start;
         else return res;
