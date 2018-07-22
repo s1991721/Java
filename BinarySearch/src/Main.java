@@ -14,6 +14,7 @@ import solution.PerfectSquareSolution;
 import solution.PowSolution;
 import solution.RotatedSortedArraySolution;
 import solution.SearchRangeSolution;
+import solution.SplitArraySolution;
 import solution.SqrtSolution;
 import solution.TwoSumSolution;
 
@@ -53,6 +54,8 @@ public class Main {
 
 //        System.out.println(new MedianSolution().solution(line));
 
-        System.out.println(new KthSmallestPairDistance().solution(line));
+//        System.out.println(new KthSmallestPairDistance().solution(line));
+
+        System.out.println(new SplitArraySolution().solution(line));
     }
 }
