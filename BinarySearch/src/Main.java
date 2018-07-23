@@ -50,12 +50,14 @@ public class Main {
 
 //        System.out.println(new MinimumRotatedSolution().solution(line));
 
-        System.out.println(new TwoSumSolution().solution(line));
+//        System.out.println(new TwoSumSolution().solution(line));
+
+//        System.out.println(new DuplicateNumberSolution().solution(line));
 
 //        System.out.println(new MedianSolution().solution(line));
 
 //        System.out.println(new KthSmallestPairDistance().solution(line));
 
-//        System.out.println(new SplitArraySolution().solution(line));
+        System.out.println(new SplitArraySolution().solution(line));
     }
 }

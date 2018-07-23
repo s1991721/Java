@@ -21,8 +21,8 @@ public class SplitArraySolution {
 
     private int splitArray(int[] nums, int m) {
 
-        int sum = 0;
-        int max = 0;
+        int sum = 0;//m=1
+        int max = 0;//m=nums.length
 
         for (int num : nums) {
             sum += num;
@@ -34,9 +34,9 @@ public class SplitArraySolution {
     private int binary(int[] nums, int m, int left, int right) {
 
         while (left < right) {
-            int mid = left + (right - left) / 2;
+            int mid = left + (right - left) / 2;//可能出现的子数组各项和
 
-            if (valid(nums, m, mid)) {
+            if (valid(nums, m, mid)) {//此和是否符合条件
                 right = mid;
             } else {
                 left = mid + 1;
@@ -52,12 +52,12 @@ public class SplitArraySolution {
         int sum = 0;
         int count = 1;
 
-        for (int num : nums) {
+        for (int num : nums) {//逐项相加
             sum += num;
-            if (sum > mid) {
-                count++;
+            if (sum > mid) {//符合项数和的条件
+                count++;//项数+
                 sum = num;
-                if (count > m) {
+                if (count > m) {//符合项数和条件，但不符合项数条件
                     return false;
                 }
             }
