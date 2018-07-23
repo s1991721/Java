@@ -48,9 +48,9 @@ public class Main {
 
 //        System.out.println(new NextGreatestLetterSolution().solution(line));
 
-        System.out.println(new MinimumRotatedSolution().solution(line));
+//        System.out.println(new MinimumRotatedSolution().solution(line));
 
-//        System.out.println(new TwoSumSolution().solution(line));
+        System.out.println(new TwoSumSolution().solution(line));
 
 //        System.out.println(new MedianSolution().solution(line));
 

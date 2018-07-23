@@ -21,6 +21,9 @@ public class TwoSumSolution {
     private int[] twoSum(int[] numbers, int target) {
         int index1, index2;
         for (int i = 0; i < numbers.length - 1; i++) {
+            if (target - numbers[i] < numbers[i]) {//要找的数，比当前位置数还小，没必要向后找
+                break;
+            }
             int temp = search(numbers, i + 1, numbers.length - 1, target - numbers[i]);
             if (temp != -1) {
                 index1 = i + 1;
