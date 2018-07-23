@@ -42,11 +42,11 @@ public class Main {
 
 //        System.out.println(new ClosestElementsSolution().solution(line));
 
-        System.out.println(new PowSolution().solution(line));
+//        System.out.println(new PowSolution().solution(line));
 
 //        System.out.println(new PerfectSquareSolution().solution(line));
 
-//        System.out.println(new NextGreatestLetterSolution().solution(line));
+        System.out.println(new NextGreatestLetterSolution().solution(line));
 
 //        System.out.println(new MinimumRotatedSolution().solution(line));
 

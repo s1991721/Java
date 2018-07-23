@@ -24,7 +24,7 @@ public class NextGreatestLetterSolution {
         int right = letters.length-1;
         while (left < right) {
             int mid = left + (right - left) / 2;
-            if (target >= letters[mid]) {
+            if (target >= letters[mid]) {//查找target的后一项
                 left = mid+1;
             } else {
                 right = mid;
@@ -33,7 +33,7 @@ public class NextGreatestLetterSolution {
 
         if (target >= letters[left]) {
             int pos = left + 1;
-            if (pos > letters.length - 1) {
+            if (pos > letters.length - 1) {//如果target是最后一项
                 pos = 0;
             }
             return letters[pos];
