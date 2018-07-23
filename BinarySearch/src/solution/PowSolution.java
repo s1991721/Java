@@ -15,19 +15,19 @@ public class PowSolution {
         int n = Integer.valueOf(strings[1]);
 
         double res=pow(x, n);
-        if (n < 0) {
+        if (n < 0) {//先求正数，后求负数
             res = 1 / res;
         }
         return res+ "";
     }
 
-    private double pow(double x, int n) {
-        if (n == 0) return 1;
+    private double pow(double x, int n) {//递归
+        if (n == 0) return 1;//0次方
 
-        double half = pow(x, n / 2);
+        double half = pow(x, n / 2);//此处除以2会损失精度
 
         double res;
-        if (n % 2 == 0) {
+        if (n % 2 == 0) {//将损失的精度补回来
             res = half * half;
         } else {
             res = half * half * x;

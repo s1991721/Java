@@ -38,11 +38,11 @@ public class Main {
 
 //        System.out.println(new PeakElementSolution().solution(line));
 
-        System.out.println(new SearchRangeSolution().solution(line));
+//        System.out.println(new SearchRangeSolution().solution(line));
 
 //        System.out.println(new ClosestElementsSolution().solution(line));
 
-//        System.out.println(new PowSolution().solution(line));
+        System.out.println(new PowSolution().solution(line));
 
 //        System.out.println(new PerfectSquareSolution().solution(line));
 
