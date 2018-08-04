@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import solution.CycleSolution;
+import solution.IntersectionSolution;
 import solution.MyLinkedListSolution;
 
 public class Main {
@@ -19,7 +20,9 @@ public class Main {
 
 //        System.out.println(new MyLinkedListSolution().solution(""));
 
-        System.out.println(new CycleSolution().solution(line));
+//        System.out.println(new CycleSolution().solution(line));
+
+        System.out.println(new IntersectionSolution().solution(line));
 
     }
 }
