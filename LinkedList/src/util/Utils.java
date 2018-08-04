@@ -28,12 +28,17 @@ public class Utils {
         ListNode pre = head;
 
         for (int i = 1; i < nums.length; i++) {
-            ListNode node = new ListNode(nums[1]);
+            ListNode node = new ListNode(nums[i]);
             pre.next = node;
             pre = node;
         }
 
         return head;
+    }
+
+    public static ListNode stringToListNode(String input) {
+        int[] nums = stringToIntegerArray(input);
+        return intArrayToListNode(nums);
     }
 
 }

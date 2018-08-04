@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import solution.CycleSolution;
 import solution.IntersectionSolution;
 import solution.MyLinkedListSolution;
+import solution.RemoveNthFromEndSolution;
 
 public class Main {
 
@@ -22,7 +23,9 @@ public class Main {
 
 //        System.out.println(new CycleSolution().solution(line));
 
-        System.out.println(new IntersectionSolution().solution(line));
+//        System.out.println(new IntersectionSolution().solution(line));
+
+        System.out.println(new RemoveNthFromEndSolution().solution(line));
 
     }
 }
