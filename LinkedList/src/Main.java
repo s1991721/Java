@@ -6,6 +6,7 @@ import solution.CycleSolution;
 import solution.IntersectionSolution;
 import solution.MyLinkedListSolution;
 import solution.RemoveNthFromEndSolution;
+import solution.RemoveSolution;
 import solution.ReverseSolution;
 
 public class Main {
@@ -28,7 +29,9 @@ public class Main {
 
 //        System.out.println(new RemoveNthFromEndSolution().solution(line));
 
-        System.out.println(new ReverseSolution().solution(line));
+//        System.out.println(new ReverseSolution().solution(line));
+
+        System.out.println(new RemoveSolution().solution(line));
 
     }
 }
