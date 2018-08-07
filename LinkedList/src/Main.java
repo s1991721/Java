@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 
 import solution.CycleSolution;
 import solution.IntersectionSolution;
+import solution.MyDoublyLinkedListSolution;
 import solution.MyLinkedListSolution;
 import solution.OddEvenSolution;
 import solution.PalindromeSolution;
@@ -37,7 +38,9 @@ public class Main {
 
 //        System.out.println(new OddEvenSolution().solution(line));
 
-        System.out.println(new PalindromeSolution().solution(line));
+//        System.out.println(new PalindromeSolution().solution(line));
+
+        System.out.println(new MyDoublyLinkedListSolution().solution(line));
 
     }
 }
