@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import solution.AddTwoNumbersSolution;
 import solution.CycleSolution;
 import solution.IntersectionSolution;
 import solution.MergeSolution;
@@ -43,7 +44,9 @@ public class Main {
 
 //        System.out.println(new MyDoublyLinkedListSolution().solution(line));
 
-        System.out.println(new MergeSolution().solution(line));
+//        System.out.println(new MergeSolution().solution(line));
+
+        System.out.println(new AddTwoNumbersSolution().solution(line));
 
     }
 }
