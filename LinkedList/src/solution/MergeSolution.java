@@ -26,27 +26,25 @@ public class MergeSolution {
 
         ListNode head = null;
         ListNode node = null;
-        ListNode temp1 = l1;
-        ListNode temp2 = l2;
 
         ListNode temp;
 
-        while (temp1 != null || temp2 != null) {
+        while (l1 != null || l2 != null) {
 
-            if (temp1 != null && temp2 != null) {
-                if (temp1.val < temp2.val) {
-                    temp = temp1;
-                    temp1 = temp1.next;
+            if (l1 != null && l2 != null) {
+                if (l1.val < l2.val) {
+                    temp = l1;
+                    l1 = l1.next;
                 } else {
-                    temp = temp2;
-                    temp2 = temp2.next;
+                    temp = l2;
+                    l2 = l2.next;
                 }
-            } else if (temp1 == null) {
-                temp = temp2;
-                temp2 = temp2.next;
+            } else if (l1 == null) {
+                temp = l2;
+                l2 = l2.next;
             } else {
-                temp = temp1;
-                temp1 = temp1.next;
+                temp = l1;
+                l1 = l1.next;
             }
 
             if (head == null) {
