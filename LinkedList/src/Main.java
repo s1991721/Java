@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 
 import solution.AddTwoNumbersSolution;
 import solution.CycleSolution;
+import solution.FlattenMultilevelSolution;
 import solution.IntersectionSolution;
 import solution.MergeSolution;
 import solution.MyDoublyLinkedListSolution;
@@ -46,7 +47,9 @@ public class Main {
 
 //        System.out.println(new MergeSolution().solution(line));
 
-        System.out.println(new AddTwoNumbersSolution().solution(line));
+//        System.out.println(new AddTwoNumbersSolution().solution(line));
+
+        System.out.println(new FlattenMultilevelSolution().solution(line));
 
     }
 }
