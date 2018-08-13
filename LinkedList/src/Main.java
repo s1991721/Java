@@ -15,6 +15,7 @@ import solution.PalindromeSolution;
 import solution.RemoveNthFromEndSolution;
 import solution.RemoveSolution;
 import solution.ReverseSolution;
+import solution.RotateSolution;
 
 public class Main {
 
@@ -52,7 +53,9 @@ public class Main {
 
 //        System.out.println(new FlattenMultilevelSolution().solution(line));
 
-        System.out.println(new DeepCopySolution().solution(line));
+//        System.out.println(new DeepCopySolution().solution(line));
+
+        System.out.println(new RotateSolution().solution(line));
 
     }
 }
