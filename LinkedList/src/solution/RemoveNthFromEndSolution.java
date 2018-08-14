@@ -28,19 +28,19 @@ public class RemoveNthFromEndSolution {
 
         for (int i = 1; i < n; i++) {
             lastNode = lastNode.next;
-            if (lastNode == null) return null;
+            if (lastNode == null) return null;//不存在倒数第n项
         }
 
-        ListNode preNode = null;
-        ListNode curNode = head;
+        ListNode preNode = null;//倒数第n+1项
+        ListNode curNode = head;//倒数第n项
 
-        while (lastNode.next != null) {
+        while (lastNode.next != null) {//快指针到终点了，各点就位
             lastNode = lastNode.next;
             preNode = curNode;
             curNode = curNode.next;
         }
 
-        if (preNode==null){
+        if (preNode==null){//移除操作
             head=curNode.next;
         }else {
             preNode.next = curNode.next;

@@ -30,20 +30,20 @@ public class RotateSolution {
         ListNode node = head;
         int len = 1;
 
-        while (node.next != null) {
+        while (node.next != null) {//求链表长度，node指到结尾
             node = node.next;
             len++;
         }
 
-        node.next = head;
+        node.next = head;//将链表连成环
         k = k % len;
         k = len - k;
 
-        while (k-- > 0) {
+        while (k-- > 0) {//将倒数第k项，变为正数，移到对应点
             node = node.next;
         }
         head = node.next;
-        node.next = null;
+        node.next = null;//切断环
 
         return head;
     }

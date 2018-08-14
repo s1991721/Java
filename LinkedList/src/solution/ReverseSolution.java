@@ -24,10 +24,10 @@ public class ReverseSolution {
 //        ListNode pre = null;
 //
 //        while (head != null) {
-//            ListNode temp = head.next;
-//            head.next = pre;
-//            pre = head;
-//            head = temp;
+//            ListNode temp = head.next;//存
+//            head.next = pre;//连
+//            pre = head;//移
+//            head = temp;//换
 //        }
 //
 //        return pre;

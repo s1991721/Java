@@ -27,7 +27,7 @@ public class MergeSolution {
         ListNode head = null;
         ListNode node = null;
 
-        ListNode temp;
+        ListNode temp;//较小项
 
         while (l1 != null || l2 != null) {
 

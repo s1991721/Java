@@ -24,16 +24,16 @@ public class PalindromeSolution {
         ListNode fast = head;
         ListNode slow = head;
 
-        while (fast != null && fast.next != null) {
+        while (fast != null && fast.next != null) {//慢走1快走2，当快到终点时，慢在中点
             fast = fast.next.next;
             slow = slow.next;
         }
 
-        if (fast != null) {
+        if (fast != null) {//长度为奇数
             slow = slow.next;
         }
 
-        slow = reverse(slow);
+        slow = reverse(slow);//将后半部翻转
 
         fast = head;
         while (slow != null) {

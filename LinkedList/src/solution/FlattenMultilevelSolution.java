@@ -24,14 +24,14 @@ public class FlattenMultilevelSolution {
 
         while (node != null) {
             if (node.child != null) {
-                Node temp = node.next;
-                node.next = flatten(node.child);
-                node.child = null;
-                node.next.prev = node;
-                while (node.next != null) {
+                Node temp = node.next;//存next
+                node.next = flatten(node.child);//将child抹平返回头节点
+                node.child = null;//删除child
+                node.next.prev = node;//连接抹平的点
+                while (node.next != null) {//移动到新连接链表的末尾
                     node = node.next;
                 }
-                node.next = temp;
+                node.next = temp;//将之前存储的next连接
                 if (temp != null) {
                     temp.prev = node;
                 }

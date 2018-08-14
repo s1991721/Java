@@ -19,13 +19,13 @@ public class DeepCopySolution {
         HashMap<RandomListNode, RandomListNode> hashMap = new HashMap<RandomListNode, RandomListNode>();
 
         RandomListNode node = head;
-        while (node != null) {
+        while (node != null) {//旧节点做key
             hashMap.put(node, new RandomListNode(node.label));
             node = node.next;
         }
 
         node = head;
-        while (node != null) {
+        while (node != null) {//复制随机指针
             hashMap.get(node).next = hashMap.get(node.next);
 
             hashMap.get(node).random = hashMap.get(node.random);

@@ -30,7 +30,7 @@ public class RemoveSolution {
         while (node != null) {
 
             if (node.val == val) {
-                if (pre != null) {
+                if (pre != null) {//删除操作
                     pre.next = node.next;
                 } else {
                     head = node.next;

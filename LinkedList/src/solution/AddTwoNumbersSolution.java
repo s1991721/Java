@@ -24,7 +24,7 @@ public class AddTwoNumbersSolution {
 
         ListNode head = null;
 
-        if (l1 == null || l2 == null) {
+        if (l1 == null || l2 == null) {//其中一链表为空，结果为非空链表
             if (l1 == null) {
                 head = l2;
             } else {
@@ -33,13 +33,12 @@ public class AddTwoNumbersSolution {
             return head;
         }
 
-
         ListNode node = null;
         int sum = 0;
 
         while (l1 != null || l2 != null || sum != 0) {
 
-            if (l1 != null) {
+            if (l1 != null) {//预防两链表长度不同
                 sum += l1.val;
                 l1 = l1.next;
             }

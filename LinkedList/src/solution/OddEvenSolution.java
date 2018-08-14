@@ -24,15 +24,15 @@ public class OddEvenSolution {
 
         if (head == null) return null;
 
-        ListNode odd = head;
-        ListNode even = head.next;
+        ListNode odd = head;//奇
+        ListNode even = head.next;//偶
         ListNode evenHead = head.next;
 
         while (even != null && even.next != null) {
-            odd.next = odd.next.next;
+            odd.next = odd.next.next;//奇偶位重新连接
             even.next = even.next.next;
 
-            odd = odd.next;
+            odd = odd.next;//指针移到下一位
             even = even.next;
         }
         odd.next = evenHead;
