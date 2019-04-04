@@ -1,5 +1,8 @@
 package solution;
 
+/**
+ * https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/1374/
+ */
 public class NumberOFIslandsSolution {
 
     public int numIslands(char[][] grid) {
