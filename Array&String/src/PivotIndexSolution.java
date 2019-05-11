@@ -6,26 +6,22 @@ public class PivotIndexSolution {
 
     public static int pivotIndex(int[] nums) {
 
-        if (nums.length == 0) {
-            return -1;
+        int totalSum = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            totalSum += nums[i];
         }
 
-        int left = 0;
-        int right = nums.length - 1;
+        int curSum = 0;
 
-        int sumL = nums[left];
-        int sumR = nums[right];
-        while (left < right) {
-            if (sumL == sumR && left + 1 == right - 1) {
-                return left + 1;
-            } else if (sumL < sumR) {
-                left++;
-                sumL += nums[left];
-            } else {
-                right--;
-                sumR += nums[right];
+        for (int i = 0; i < nums.length; i++) {
+            if (totalSum - nums[i] == 2 * curSum) {
+                return i;
+            }else {
+                curSum+=nums[i];
             }
         }
+
         return -1;
 
     }
