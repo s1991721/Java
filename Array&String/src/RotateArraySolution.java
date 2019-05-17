@@ -9,7 +9,9 @@ public class RotateArraySolution {
 
     public void rotate(int[] nums, int k) {
 
-        reverse(nums, 0, nums.length);    //7654321
+        k = k % nums.length;
+
+        reverse(nums, 0, nums.length - 1);    //7654321
         reverse(nums, 0, k - 1);        //5674321
         reverse(nums, k, nums.length - 1);//5671234
 
